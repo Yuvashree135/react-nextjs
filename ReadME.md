@@ -55,8 +55,8 @@ In our example there is a timeout of 3s so the page renders after 3s.
 
 21. json-server is a development app used to get data.
 Add a script in package.json to run json-server.
-   ```
-    "json-server": "json-server --watch db.son --port 4000 --delay 200"
+    ```
+    "json-server": "json-server --watch db.json --port 4000 --delay 200"
     ```
 this launches the file db.json which has a mock json response.
 Run the script - npm run json-server.
