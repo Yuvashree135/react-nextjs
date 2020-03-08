@@ -1,4 +1,4 @@
-##Steps.
+## Steps.
 
 1. npm init -y 
 to create the default package details.
@@ -22,3 +22,7 @@ to create the default package details.
 8. After installing the plugin add it in next.config.js file.
         const withCSS = require("@zeit/next-css");
         module.exports = withCSS();
+
+9. We can create a js and css file and import them in the needed file. Css imports becomes easier with the withCSS plugin that was added.
+
+10. when we run this basic app, there is a synchronization problem between the server and client so we see an error that the text content did not match.
