@@ -58,3 +58,11 @@ Run the script - npm run json-server.
 22. Include axios on index.js to get the json response. The data is available on response.data which can be passed to the props and displayed in the html.
 
 23. We can us the map functions to parse through the array. A key attribute should be used across the map values, as it is good to mark them with a unique key.
+
+24. Routing - It again starts in the page directory. Create another react class with a different name. The name of the file becomes the route of that component.
+
+25. Add routing from the jsx. we use link component provided by next for routing. 'next/link'.
+It can be used like - 
+    <Link href="/fileName">
+        Route
+    </Link>

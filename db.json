@@ -16,5 +16,23 @@
             "name": "Donald",
             "from": "Salem"
         }
+    ],
+    "office": [
+        {
+            "name": "Bhaiya",
+            "from": "Andhra"
+        },
+        {
+            "name": "Guruji",
+            "from": "Bihar"
+        },
+        {
+            "name": "Achippu",
+            "from": "Telengana"
+        },
+        {
+            "name": "Shinchan",
+            "from": "Pondicherry"
+        }
     ]
 }

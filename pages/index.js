@@ -1,6 +1,7 @@
 import React from 'react';
 import DigitalClock from '../src/DigitalClock';
 import axios from 'axios';
+import Link from 'next/link';
 
 class Index extends React.Component {
 
@@ -69,6 +70,9 @@ class Index extends React.Component {
     render() {
         return <>
         <DigitalClock time={ this.state.time }></DigitalClock>
+        <Link href="/officeMates">
+            <a>Office Mates</a>
+        </Link>
         <ul>{this.state.friends.map((friend, index) => {
             return <li key={index}>{friend.name}</li>
         })}</ul>
