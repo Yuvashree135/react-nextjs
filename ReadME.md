@@ -46,3 +46,15 @@ when the component runs the page, it deserializes the properties and passes it t
 
 19. The above props is for static sync data. For async data we can use promises. When we use promise the page waits for the promise to complete and then loads.
 In our example there is a timeout of 3s so the page renders after 3s.
+
+20. Axios is a package used for making REST API calls easily.
+
+21. json-server is a development app used to get data.
+Add a script in package.json to run json-server.
+    "json-server": "json-server --watch db.son --port 4000 --delay 200"
+this launches the file db.json which has a mock json response.
+Run the script - npm run json-server.
+
+22. Include axios on index.js to get the json response. The data is available on response.data which can be passed to the props and displayed in the html.
+
+23. We can us the map functions to parse through the array. A key attribute should be used across the map values, as it is good to mark them with a unique key.
