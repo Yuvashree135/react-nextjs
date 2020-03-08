@@ -26,3 +26,23 @@ to create the default package details.
 9. We can create a js and css file and import them in the needed file. Css imports becomes easier with the withCSS plugin that was added.
 
 10. when we run this basic app, there is a synchronization problem between the server and client so we see an error that the text content did not match.
+
+11. this is solved with the static method: 'getInitialProps'.
+
+12. The next js finds the pages directory and runs the js file on the server side. then once the client has got the java script, it executes the react components. Because of this the constructor gets called once in server and once in client, both are at different time so that data are different.
+
+13. Client regenerates the javascript to wire all the events. So if there is a mismatch in the java script. then we get the mismatch html error.
+
+14. We use the react properties generated in the server side and pass it to client side. this matches the javascript on both the sides.
+
+15. Files in Pages directory runs both on server and client. So it expects a method getInitialProps - establish the needed data as props. (eg: time).
+
+16. Once constructor is initiated on the server side, 'next' sets the value to the props and renders it.
+
+17. On the client side next serializes and passes the html.
+when the component runs the page, it deserializes the properties and passes it to the constructor.
+
+18. The getInitialProps method gets initiated only on the server side java script rendering and called on the client side. When the page is opened from the client the method is not called.
+
+19. The above props is for static sync data. For async data we can use promises. When we use promise the page waits for the promise to complete and then loads.
+In our example there is a timeout of 3s so the page renders after 3s.
