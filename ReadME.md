@@ -7,9 +7,11 @@ to create the default package details.
 
 3. update package.json with the scripts to run
 
+    ```
     "dev": "next",
     "build": "next build",
     "start": "next start"
+    ```
 
 4. next expects the scripts to be in the pages directory, so create one and use it as the index.
 
@@ -20,8 +22,10 @@ to create the default package details.
 7. To add css and to map it through a seperate css file we can use plugin @zeit/next-css.
 
 8. After installing the plugin add it in next.config.js file.
+       ```
         const withCSS = require("@zeit/next-css");
         module.exports = withCSS();
+        ```
 
 9. We can create a js and css file and import them in the needed file. Css imports becomes easier with the withCSS plugin that was added.
 
@@ -51,7 +55,9 @@ In our example there is a timeout of 3s so the page renders after 3s.
 
 21. json-server is a development app used to get data.
 Add a script in package.json to run json-server.
+   ```
     "json-server": "json-server --watch db.son --port 4000 --delay 200"
+    ```
 this launches the file db.json which has a mock json response.
 Run the script - npm run json-server.
 
@@ -63,6 +69,8 @@ Run the script - npm run json-server.
 
 25. Add routing from the jsx. we use link component provided by next for routing. 'next/link'.
 It can be used like - 
+   ```
     <Link href="/fileName">
         Route
     </Link>
+    ```
